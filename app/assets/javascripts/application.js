@@ -12,7 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require bootstrap-sprockets  //= It has to be underneath jquery, _ujs
+//= require bootstrap-sprockets  
 //= require turbolinks
 //= require_tree .
 

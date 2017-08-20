@@ -8,18 +8,32 @@
   </ul>
 <% end %>
 
-<%= form_for @article do |f| %>  <!-- |f| can be anything -->
-  <p>
-    <%= f.label :title %><br/>
-    <%= f.text_field :title %>
-  </p>
-  <p>
-    <%= f.label :desciption %><br/>
-    <%= f.text_area :description %> <!-- text_area becuase we need a bigger box for desc -->
-  </p>
-  <p>
-    <%= f.submit %>
-  </p>
-<% end %> 
-
-<%= link_to "Back to articles", articles_path %>
+<div class="row">
+  <div class="col-md-12">
+    <%= form_for(@article, :html => {class: "form-horizontal", role: "form"}) do |f| %>  <!-- without class: "form-horizontal" form won't work, we have to add it this way ; |f| can be anything -->
+      <div class="form-group">
+        <div class="control-label col-sm-2">
+          <%= f.label :title %><br/>
+        </div>
+        <div class="col-sm-8">
+          <%= f.text_field :title, class: "form-control", placeholder: "Title of article", autofocus: true %>
+        </div>
+      </div>  
+      <div class="form-group">
+        <div class="control-label col-sm-2">
+          <%= f.label :desciption %><br/>
+        </div>
+        <div class="col-sm-8">
+          <%= f.text_area :description, rows: 10, class: "form-control", placeholder: "Body of article" %> <!-- text_area becuase we need a bigger box for desc -->
+        </div>
+      </div>  
+      <div class="form-group">
+        <div class="col-sm-12">
+          <%= f.submit class: "btn btn-primary" %>
+        </div>
+      </div>
+    <% end %>
+    
+    <%= link_to "Back to articles", articles_path %>
+  </div>
+</div>

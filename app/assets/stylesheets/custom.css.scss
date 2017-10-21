@@ -17,12 +17,6 @@ body {
   padding-top: 20px;
 }
 
-.footer {
-  margin-top: 80px;
-  font-size: 15px;
-  // border-top: 1px solid #aeaeae;
-}
-
 .panel.panel-danger {
   font-family: 'Crimson Text', serif;
   text-align: left;
@@ -41,4 +35,15 @@ body {
   margin-top: 15px;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 14px;
+}
+
+.listing {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer {
+  margin-top: 80px;
+  font-size: 15px;
+  // border-top: 1px solid #aeaeae;
 }

@@ -1,6 +1,6 @@
 <%= render 'shared/errors', obj: @user %>  <!-- to render errors template from views/shared folder !-->
 
-<div class="row">
+<div class="container">
   <div class="col-md-12">
     <%= form_for(@user, :html => {class: "form-horizontal", role: "form"}) do |f| %>  <!-- without class: "form-horizontal" form won't work, we have to add it this way ; |f| can be anything -->
       <div class="form-group">

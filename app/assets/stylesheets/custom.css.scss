@@ -42,6 +42,15 @@ body {
   padding-left: 0;
 }
 
+.badge {
+  background: white;
+}
+
+// we need it for styling in PC
+.input-checkbox input {
+  width: auto !important;
+}
+
 .header-nav-current-user {
   font-size: 14px;
   color: black;
